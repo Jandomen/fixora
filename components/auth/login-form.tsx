@@ -78,9 +78,7 @@ export function LoginForm() {
             {isPending ? "Ingresando..." : "Ingresar"}
           </Button>
 
-          <p className="pt-1 text-center text-xs text-muted-foreground">
-            Demo: admin@fixora.mx / admin123
-          </p>
+          
         </form>
       </CardContent>
     </Card>
