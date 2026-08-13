@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { redirect } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 import { LoginForm } from "@/components/auth/login-form";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { getSession } from "@/lib/auth";
@@ -14,6 +16,13 @@ export default async function LoginPage() {
       <div className="absolute top-4 right-4">
         <ThemeToggle />
       </div>
+      <Link
+        href="/"
+        className="absolute top-4 left-4 inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground"
+      >
+        <ArrowLeft className="size-4" />
+        Volver al inicio
+      </Link>
       <div className="flex flex-col items-center gap-2 text-center">
         <div className="flex size-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
           <span className="text-lg font-bold">F</span>
